@@ -1,0 +1,3 @@
+[submodule "testbench/apb"]
+	path = testbench/apb
+	url = https://github.com/uvm/apb.git
