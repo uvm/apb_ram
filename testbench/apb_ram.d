@@ -113,6 +113,10 @@ class apb_tb_top: Entity
     traceEverOn(true);
     opentrace("apb_ram.fst");
   }
+
+  override void doFinish() {
+    closetrace();
+  }
   
   Task!stimulateClk stimulateClkTask;
   Task!stimulateRst stimulateRstTask;
